@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guitar Lessons in Leander, TX | Leander Music School</title>
+<meta name="description" content="Private one-on-one guitar and ukulele lessons for kids, teens and adults in Leander, TX. Learn the songs you actually want to play. Take a tour and get $20 off.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Lato:wght@400;700;900&display=swap">
+<style>
+.lms-lp *,.lms-lp *::before,.lms-lp *::after{box-sizing:border-box}
+.lms-lp{
+  --maroon:#6C0C0C; --maroon-dk:#4E0808; --gold:#FCCC00; --gold-dk:#D9AE00;
+  --ink:#181818; --body:#3A3733; --blue:#405C9C;
+  --paper:#FBFAF7; --card:#FFFFFF; --rule:#E7E1D4; --soft:#F3F0E8;
+  --shadow:0 1px 2px rgba(24,24,24,.06),0 8px 28px -12px rgba(108,12,12,.18);
+  font-family:Lato,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:17px; line-height:1.62; color:var(--body); background:var(--paper);
+  -webkit-font-smoothing:antialiased; margin:0;
+}
+.lms-lp h1,.lms-lp h2,.lms-lp h3,.lms-lp .dsp{
+  font-family:"Zilla Slab",Georgia,"Times New Roman",serif; color:var(--ink);
+  font-weight:700; letter-spacing:-.01em; line-height:1.14; text-wrap:balance; margin:0;
+}
+.lms-lp p{margin:0 0 1.05em}
+.lms-lp a{color:var(--maroon)}
+.lms-lp img{max-width:100%; height:auto; display:block}
+.lms-lp .wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+.lms-lp .measure{max-width:68ch}
+
+/* ---------- buttons ---------- */
+.lms-lp .btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+  font-family:Lato,sans-serif; font-weight:900; font-size:17px; letter-spacing:.01em;
+  text-decoration:none; border:2px solid transparent; border-radius:6px;
+  padding:15px 26px; cursor:pointer; text-align:center; line-height:1.25;
+  transition:transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+}
+.lms-lp .btn-primary{background:var(--gold); color:#1A1400; border-color:var(--gold-dk); box-shadow:0 3px 0 0 var(--gold-dk)}
+.lms-lp .btn-primary:hover{background:#FFD91F; transform:translateY(-1px)}
+.lms-lp .btn-primary:active{transform:translateY(1px); box-shadow:0 1px 0 0 var(--gold-dk)}
+.lms-lp .btn-ghost{background:transparent; color:#fff; border-color:rgba(255,255,255,.5); font-weight:700}
+.lms-lp .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.lms-lp .btn-dark{background:var(--maroon); color:#fff; border-color:var(--maroon); box-shadow:0 3px 0 0 var(--maroon-dk)}
+.lms-lp .btn-dark:hover{background:#7D0F0F; transform:translateY(-1px)}
+.lms-lp .btn:focus-visible{outline:3px solid var(--blue); outline-offset:3px}
+
+/* ---------- hero ---------- */
+.lms-lp .hero{background:var(--maroon); color:#fff; position:relative; overflow:hidden}
+.lms-lp .hero::after{content:""; position:absolute; inset:auto 0 0 0; height:5px;
+  background:var(--gold)}
+.lms-lp .hero-grid{display:grid; grid-template-columns:1.08fr .92fr; gap:44px; align-items:center; padding:52px 0 58px}
+.lms-lp .hero h1{color:#fff; font-size:clamp(34px,4.6vw,52px)}
+.lms-lp .eyebrow{font-family:Lato,sans-serif; font-weight:900; font-size:12.5px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--gold); margin:0 0 14px}
+.lms-lp .hero-sub{font-size:19px; color:rgba(255,255,255,.9); margin:16px 0 24px; max-width:46ch}
+.lms-lp .offer{display:inline-flex; align-items:center; gap:9px; background:transparent; color:var(--gold);
+  font-weight:900; font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+  border:1px solid rgba(252,204,0,.55); padding:6px 12px; border-radius:3px; margin:0 0 20px}
+.lms-lp .offer::before{content:""; width:7px; height:7px; background:var(--gold); border-radius:50%; flex:0 0 auto}
+.lms-lp .cta-row{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.lms-lp .hero-note{font-size:14.5px; color:rgba(255,255,255,.72); margin:16px 0 0}
+.lms-lp .trust{display:flex; flex-wrap:wrap; gap:8px 22px; margin:26px 0 0; padding:20px 0 0;
+  border-top:1px solid rgba(255,255,255,.22); list-style:none}
+.lms-lp .trust li{font-size:15px; font-weight:700; color:#fff; display:flex; align-items:center; gap:9px}
+.lms-lp .trust li::before{content:""; width:8px; height:8px; background:var(--gold); border-radius:2px; flex:0 0 auto}
+.lms-lp .hero-photo{background:#fff; border-radius:10px; padding:0; overflow:hidden; box-shadow:0 18px 44px -18px rgba(0,0,0,.5)}
+.lms-lp .hero-photo img{width:100%}
+.lms-lp .hero-photo figcaption{font-size:13px; color:#6B6560; padding:11px 15px; background:#fff; border-top:1px solid var(--rule)}
+
+/* ---------- sections ---------- */
+.lms-lp section{padding:58px 0}
+.lms-lp .sec-soft{background:var(--soft)}
+.lms-lp .sec-head{margin-bottom:34px}
+.lms-lp .sec-head h2{font-size:clamp(26px,3.2vw,35px)}
+.lms-lp .sec-head p{margin:12px 0 0; font-size:18px; max-width:60ch}
+.lms-lp .kicker{font-family:Lato,sans-serif; font-weight:900; font-size:12px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--maroon); margin:0 0 10px}
+
+/* ---------- cards ---------- */
+.lms-lp .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:start}
+.lms-lp .card{background:var(--card); border:1px solid var(--rule); border-radius:9px; padding:24px 22px; box-shadow:var(--shadow)}
+.lms-lp .card h3{font-size:20px; margin-bottom:9px}
+.lms-lp .card p{font-size:16px; margin:0}
+.lms-lp .card .tag{display:inline-block; font-family:Lato,sans-serif; font-weight:900; font-size:11px;
+  letter-spacing:.11em; text-transform:uppercase; color:var(--maroon); background:#F6E9E9;
+  padding:4px 9px; border-radius:4px; margin-bottom:12px}
+
+/* ---------- the four beats (process) ---------- */
+.lms-lp .beats{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--rule);
+  border-radius:9px; overflow:hidden; background:var(--card)}
+.lms-lp .beat{padding:24px 20px; border-right:1px solid var(--rule); position:relative}
+.lms-lp .beat:last-child{border-right:none}
+.lms-lp .beat-n{display:flex; gap:4px; margin-bottom:14px}
+.lms-lp .beat-n i{width:9px; height:9px; border-radius:2px; background:var(--rule); display:block}
+.lms-lp .beat-n i.on{background:var(--gold)}
+.lms-lp .beat h3{font-size:18px; margin-bottom:7px}
+.lms-lp .beat p{font-size:15.5px; margin:0}
+
+/* ---------- reviews ---------- */
+.lms-lp .reviews{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:start}
+.lms-lp .review{background:var(--card); border:1px solid var(--rule); border-left:4px solid var(--gold);
+  border-radius:0 9px 9px 0; padding:22px 22px 20px}
+.lms-lp .review blockquote{margin:0 0 14px; font-size:16.5px; color:var(--ink)}
+.lms-lp .review .who{font-size:14px; font-weight:900; color:var(--ink); margin:0}
+.lms-lp .review .where{font-size:13.5px; color:#77716B; margin:2px 0 0}
+.lms-lp .src{font-size:13.5px; color:#77716B; margin:20px 0 0}
+
+/* ---------- body copy ---------- */
+.lms-lp .body-copy h2{font-size:clamp(24px,2.8vw,30px); margin:40px 0 14px}
+.lms-lp .body-copy h2:first-child{margin-top:0}
+.lms-lp .body-copy h3{font-size:19px; margin:26px 0 8px}
+.lms-lp .body-copy ul{margin:0 0 1.1em; padding-left:0; list-style:none}
+.lms-lp .body-copy li{position:relative; padding-left:24px; margin-bottom:8px; font-size:16.5px}
+.lms-lp .body-copy li::before{content:""; position:absolute; left:6px; top:.62em; width:7px; height:7px;
+  background:var(--maroon); border-radius:2px}
+/* ---------- lead form ---------- */
+.lms-lp .sec-form{background:var(--soft); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule)}
+.lms-lp .form-grid{display:grid; grid-template-columns:.92fr 1.08fr; gap:44px; align-items:start}
+.lms-lp .form-points{list-style:none; margin:22px 0 0; padding:0}
+.lms-lp .form-points li{position:relative; padding-left:26px; margin-bottom:10px; font-size:16.5px}
+.lms-lp .form-points li::before{content:""; position:absolute; left:0; top:.5em; width:12px; height:12px;
+  background:var(--gold); border-radius:2px}
+.lms-lp .alt{font-size:15.5px; color:#6E6862; margin:22px 0 0; padding-top:18px; border-top:1px solid var(--rule)}
+.lms-lp .form-embed{background:var(--card); border:1px solid var(--rule); border-radius:10px;
+  padding:22px 20px; box-shadow:var(--shadow); min-height:120px}
+.lms-lp .form-embed .nojs{margin:0; font-size:16px}
+.lms-lp .privacy{font-size:13px; color:#77716B; margin:14px 0 0; line-height:1.55; max-width:46ch}
+/* the client's form runs to thirteen fields, so hold the supporting copy alongside it */
+.lms-lp .form-aside{position:sticky; top:24px}
+.lms-lp .skills{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin:22px 0 0}
+.lms-lp .skill{background:var(--soft); border-radius:8px; padding:18px 20px}
+.lms-lp .skill h3{font-size:17px; margin:0 0 6px}
+.lms-lp .skill p{font-size:15.5px; margin:0}
+
+/* ---------- faq ---------- */
+.lms-lp details{background:var(--card); border:1px solid var(--rule); border-radius:8px; margin-bottom:10px}
+.lms-lp summary{cursor:pointer; padding:17px 20px; font-family:"Zilla Slab",Georgia,serif; font-weight:700;
+  font-size:18.5px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; gap:14px; align-items:flex-start}
+.lms-lp summary::-webkit-details-marker{display:none}
+.lms-lp summary::after{content:"+"; font-family:Lato,sans-serif; font-weight:900; color:var(--maroon); font-size:22px; line-height:1; flex:0 0 auto}
+.lms-lp details[open] summary::after{content:"\2013"}
+.lms-lp details > div{padding:0 20px 18px; font-size:16.5px}
+.lms-lp details > div p:last-child{margin-bottom:0}
+.lms-lp summary:focus-visible{outline:3px solid var(--blue); outline-offset:-3px; border-radius:8px}
+
+/* ---------- visit / final ---------- */
+.lms-lp .visit{display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start}
+.lms-lp .hours{list-style:none; margin:0; padding:0; border-top:1px solid var(--rule)}
+.lms-lp .hours li{display:flex; justify-content:space-between; gap:16px; padding:10px 0;
+  border-bottom:1px solid var(--rule); font-size:16px}
+.lms-lp .hours b{color:var(--ink)}
+.lms-lp .final{background:var(--maroon); color:#fff; text-align:center}
+.lms-lp .final h2{color:#fff; font-size:clamp(27px,3.4vw,38px)}
+.lms-lp .final p{color:rgba(255,255,255,.88); font-size:18.5px; margin:14px auto 26px; max-width:52ch}
+.lms-lp .final .cta-row{justify-content:center}
+.lms-lp .addr{font-size:16.5px; line-height:1.7}
+.lms-lp .addr strong{color:var(--ink)}
+
+/* ---------- sticky mobile bar ---------- */
+.lms-lp .sticky{position:fixed; left:0; right:0; bottom:0; z-index:60; display:none;
+  background:#fff; border-top:1px solid var(--rule); padding:10px 12px;
+  box-shadow:0 -6px 20px -8px rgba(0,0,0,.22); gap:9px}
+.lms-lp .sticky .btn{flex:1 1 0; padding:14px 10px; font-size:15.5px}
+.lms-lp .sticky .btn-call{background:#fff; color:var(--maroon); border-color:var(--maroon); box-shadow:none; flex:0 0 44%}
+
+@media (max-width:900px){
+  .lms-lp .hero-grid{grid-template-columns:1fr; gap:28px; padding:38px 0 44px}
+  .lms-lp .cards,.lms-lp .reviews,.lms-lp .visit,.lms-lp .skills,.lms-lp .form-grid{grid-template-columns:1fr}
+  .lms-lp .form-grid{gap:28px}
+  .lms-lp .form-aside{position:static}
+  .lms-lp .beats{grid-template-columns:1fr 1fr}
+  .lms-lp .beat:nth-child(2){border-right:none}
+  .lms-lp .beat:nth-child(1),.lms-lp .beat:nth-child(2){border-bottom:1px solid var(--rule)}
+}
+@media (max-width:600px){
+  .lms-lp{font-size:16.5px}
+  .lms-lp section{padding:42px 0}
+  .lms-lp .beats{grid-template-columns:1fr}
+  .lms-lp .field-row{grid-template-columns:1fr}
+  .lms-lp .beat{border-right:none; border-bottom:1px solid var(--rule)}
+  .lms-lp .beat:last-child{border-bottom:none}
+  .lms-lp .sticky{display:flex}
+  .lms-lp .final,.lms-lp footer.lms-foot{padding-bottom:96px}
+  .lms-lp .cta-row .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.lms-lp *{transition:none!important}}
+</style>
+<!-- Meta Pixel: PageView on load. Lead fires once, only on a real form confirmation. -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','277998869200399');fbq('track','PageView');
+</script>
+</head>
+<body class="lms-lp">
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Leander, Cedar Park and Liberty Hill</p>
+      <h1>Guitar Lessons in Leander, TX</h1>
+      <p class="hero-sub">Private one-on-one guitar and ukulele lessons for beginners, kids, teens and adults. Bring the songs you want to play.</p>
+      <p class="offer">$20 off when you tour the studio</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#start">Get Guitar Lesson Times and Pricing</a>
+        <a class="btn btn-ghost" href="tel:+15125492454">Call or text (512) 549-2454</a>
+      </div>
+      <p class="hero-note">Tours take about fifteen minutes. You will meet an instructor and see the studio before you decide anything.</p>
+      <ul class="trust">
+        <li>One-on-one, never group</li>
+        <li>Acoustic, electric and ukulele</li>
+        <li>Ages 5 to adult</li>
+      </ul>
+    </div>
+    <figure class="hero-photo">
+      <img src="https://hitmakermusicschool.com/wp-content/uploads/2020/04/guitar-red-girl.jpg" alt="A young guitar student smiling while holding an acoustic guitar at Leander Music School" width="960" height="720">
+      <figcaption>Guitar students perform in recitals through the year.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Who these lessons are for</p>
+      <h2>Most of our guitar students start in one of three places</h2>
+      <p>Guitar is the instrument most students ask for first. Tell us where the student is now and we will match the teacher to it.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Complete beginner</span>
+        <h3>Has never played a note</h3>
+        <p>Beginners start with posture, a handful of chords and finger dexterity, then apply them to a real song quickly. Learning one song you love does more for motivation than a month of exercises.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Young starter</span>
+        <h3>Small hands, short attention span</h3>
+        <p>Ukulele is often the better first instrument for younger children. Four strings, softer nylon, and chords a small hand can actually reach. Many students move to guitar from there.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Teen and adult</span>
+        <h3>Self taught and stuck</h3>
+        <p>If you learned from videos and hit a ceiling, lessons fill the gaps. We fix technique that is holding you back, then get you playing with other people.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">How it works</p>
+      <h2>Four steps from first call to first lesson</h2>
+    </div>
+    <div class="beats">
+      <div class="beat">
+        <div class="beat-n" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <h3>Book a tour</h3>
+        <p>Pick a time online or call. It takes about fifteen minutes and there is no obligation.</p>
+      </div>
+      <div class="beat">
+        <div class="beat-n" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></div>
+        <h3>Meet your teacher</h3>
+        <p>We match the student to an instructor by age, goals and the music they like.</p>
+      </div>
+      <div class="beat">
+        <div class="beat-n" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div>
+        <h3>Start weekly lessons</h3>
+        <p>One-on-one, same time each week, by appointment around your schedule.</p>
+      </div>
+      <div class="beat">
+        <div class="beat-n" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <h3>Play in a recital</h3>
+        <p>Students perform through the year, with short term goals along the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What families say</p>
+      <h2>What guitar families tell us</h2>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <blockquote>&ldquo;Our son loves taking guitar lessons from Mike. Mike is positive, yet honest to help our son progress. Can&#x27;t wait for Ace to play in a recital.&rdquo;</blockquote>
+        <p class="who">Beth N.</p>
+        <p class="where">Liberty Hill, TX</p>
+      </div>
+      <div class="review">
+        <blockquote>&ldquo;My daughter is really happy here, and so am I. The recitals are really important for confidence, and they&#x27;re fun as well. The teachers are professional, compassionate, and flexible.&rdquo;</blockquote>
+        <p class="who">Cris K.</p>
+        <p class="where">Cedar Park, TX</p>
+      </div>
+      <div class="review">
+        <blockquote>&ldquo;LMS has a small town feel and teachers who care about the kids. Each lesson was tailored to their skillset. They were pushed at a reasonable rate, progressed well and gained a lot of experience.&rdquo;</blockquote>
+        <p class="who">Lyndsay T.</p>
+        <p class="where">Liberty Hill, TX</p>
+      </div>
+    </div>
+    <p class="src">Reviews from Leander Music School families. Read more on our testimonials page.</p>
+  </div>
+</section>
+
+<section id="start" class="sec-form">
+  <div class="wrap form-grid">
+    <div class="form-aside">
+      <p class="kicker">No obligation</p>
+      <h2>Tell us about the student and we will text you back</h2>
+      <p style="margin-top:12px">You will get lesson times that fit your week and what it costs, from a person, not an autoresponder. Ask us before you buy an instrument.</p>
+      <ul class="form-points">
+        <li>We reply the same day during lobby hours</li>
+        <li>We will tell you what to buy, and what not to, before you spend anything</li>
+        <li>Tour the studio and get $20 off</li>
+      </ul>
+      <p class="alt">Would rather just book the tour?
+        <a href="https://bookmenow.info/book/lmusicschool/Tour">Pick a time online</a> or call
+        <a href="tel:+15125492454">(512) 549-2454</a>.</p>
+    </div>
+
+    <div class="form-embed">
+      <!-- Leander Music School CRM form widget. Embed code is used exactly as supplied:
+           do not edit src or data. Mobile sizing is handled by the style block injected
+           below, which reaches into the widget's open shadow root. -->
+      <script
+          async data-crm-form-widget src="https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js"
+          data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjZmZmZmZmIiwiYm9yZGVyUmFkaXVzIjoiNXB4IiwiYm9yZGVyU3R5bGUiOiJzb2xpZCIsImJvcmRlcldpZHRoIjoiMXB4IiwiZm9ybUlkIjoiRm9ybUNvbmZpZ0lELTYzMmQyZmU4LTE0OGEtNDcwZi1iYjAxLTdjOTEzNjc3ZmNjYiIsInBhZGRpbmciOiIyMHB4IiwicHJpbWFyeUNvbG9yIjoiIzYxMDMwMyIsInByaW1hcnlGb250Q29sb3IiOiIjMDAwMDAwIiwid2lkdGgiOiI4MCUifQ=="
+      ></script>
+      <noscript><p class="nojs">This form needs JavaScript. Call or text
+        <a href="tel:+15125492454">(512) 549-2454</a> and we will take your details.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Questions parents ask first</p>
+      <h2>Guitar lesson questions, answered</h2>
+    </div>
+    <div class="measure">
+      <details>
+        <summary>Do I need my own guitar to start?</summary>
+        <div><p>You will need an instrument to practise on at home, but it does not need to be expensive. Come to the tour first and ask us before you buy anything.</p><p>We will tell you what size and type suits the student, which matters more than price. A guitar that is too large is the most common reason a young student gives up early.</p></div>
+      </details>
+      <details>
+        <summary>Should my child start on guitar or ukulele?</summary>
+        <div><p>For many children under about eight, ukulele is the easier start. It has four strings instead of six, softer nylon strings, and a smaller neck that a small hand can reach around.</p><p>Skills carry across, so students who begin on ukulele often move to guitar later without starting again. We teach both here.</p></div>
+      </details>
+      <details>
+        <summary>Acoustic or electric?</summary>
+        <div><p>Either. Some students are motivated by the sound of the music they want to play, and if that is electric then electric is the right place to start. Others prefer acoustic because there is less equipment involved.</p><p>The fundamentals we teach in the first year are the same on both.</p></div>
+      </details>
+      <details>
+        <summary>Are lessons private or in a group?</summary>
+        <div><p>Every guitar lesson is private and one-on-one, by appointment at the same time each week. That way the instructor can work on exactly what that student needs.</p></div>
+      </details>
+      <details>
+        <summary>Can I bring my own songs?</summary>
+        <div><p>Yes, and we encourage it. Our teachers ask students to bring in their own song ideas. We begin with finger dexterity through scales and chords, then apply those skills to music the student chose.</p></div>
+      </details>
+      <details>
+        <summary>Where are you located?</summary>
+        <div><p>We are at 1640 Highland Falls Dr, Suite 201, Leander, TX 78641, on E. Crystal Falls between 183A and Ronald Reagan Blvd. Families come to us from Leander, Cedar Park, Liberty Hill, Round Rock, Georgetown and north Austin.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec-soft">
+  <div class="wrap visit">
+    <div>
+      <p class="kicker">Come see the studio</p>
+      <h2>Visit us in Leander</h2>
+      <p class="addr" style="margin-top:14px">
+        <strong>1640 Highland Falls Dr, Suite 201, Leander, TX 78641</strong><br>
+        E. Crystal Falls between 183A and Ronald Reagan Blvd<br>
+        <a href="tel:+15125492454">(512) 549-2454</a>
+      </p>
+      <p style="font-size:16px">Teaching in Leander since 2013, and serving families in Cedar Park, Liberty Hill, Round Rock, Georgetown and north Austin.</p>
+      <a class="btn btn-dark" href="https://bookmenow.info/book/lmusicschool/Tour">Book a tour and get $20 off</a>
+    </div>
+    <div>
+      <h3 style="font-size:19px; margin-bottom:14px">Lobby hours</h3>
+      <ul class="hours">
+        <li><b>Monday to Thursday</b><span>10:00 am to 8:30 pm</span></li>
+        <li><b>Friday</b><span>10:00 am to 7:30 pm</span></li>
+        <li><b>Saturday</b><span>9:00 am to 3:00 pm</span></li>
+        <li><b>Sunday</b><span>1:00 pm to 6:00 pm</span></li>
+      </ul>
+      <p style="font-size:15.5px; margin-top:14px; color:#77716B">Lessons are by appointment. Call or text and we will find a time that fits your week.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Come and hear a lesson before you commit</h2>
+    <p>Book a fifteen minute tour, meet an instructor, see the studio. Take the tour and get $20 off.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#start">Get Guitar Lesson Times and Pricing</a>
+      <a class="btn btn-ghost" href="tel:+15125492454">Call or text (512) 549-2454</a>
+    </div>
+  </div>
+</section>
+
+<div class="sticky">
+  <a class="btn btn-call" href="tel:+15125492454">Call</a>
+  <a class="btn btn-primary" href="#start">Get Times and Pricing</a>
+</div>
+
+<script>
+(function(){
+  /* The widget renders into an OPEN shadow root, so these rules reach its internals.
+     Its own config is width:80%, which wastes about a third of a phone screen, and its
+     inputs are under 16px, which makes iOS zoom in on focus. Both are fixed here without
+     touching the embed code. */
+  var CSS = [
+    '.crm-form,.form-widget,form{width:100%!important;max-width:100%!important;padding:0!important;margin:0!important}',
+    '.form-group{margin:0 0 14px!important;width:100%!important}',
+    'label{display:block!important;font-family:Lato,Arial,sans-serif!important;font-weight:900!important;',
+      'font-size:13px!important;letter-spacing:.05em!important;text-transform:uppercase!important;',
+      'color:#181818!important;margin-bottom:6px!important;line-height:1.35!important}',
+    'input:not([type=submit]):not([type=hidden]),select,textarea{width:100%!important;box-sizing:border-box!important;',
+      'font-family:Lato,Arial,sans-serif!important;font-size:16px!important;min-height:46px!important;',
+      'color:#181818!important;background:#fff!important;border:1.5px solid #CFC8BA!important;',
+      'border-radius:6px!important;padding:11px 13px!important}',
+    'textarea{min-height:88px!important}',
+    'input:focus,select:focus,textarea:focus{outline:none!important;border-color:#6C0C0C!important;',
+      'box-shadow:0 0 0 3px rgba(108,12,12,.13)!important}',
+    'input[type=submit],button[type=submit]{width:100%!important;min-height:52px!important;',
+      'font-family:Lato,Arial,sans-serif!important;font-size:17px!important;font-weight:900!important;',
+      'background:#FCCC00!important;color:#1A1400!important;border:2px solid #D9AE00!important;',
+      'border-radius:6px!important;box-shadow:0 3px 0 0 #D9AE00!important;cursor:pointer!important;',
+      'margin-top:6px!important;padding:0 18px!important}',
+    'input[type=submit]:hover,button[type=submit]:hover{background:#FFD91F!important}',
+    '.jsonform-required-warning,.help-block,.error{font-size:13.5px!important}',
+    'a{color:#6C0C0C!important}'
+  ].join('');
+
+  var LEAD_FIRED = false;
+  function fireLead(){
+    if(LEAD_FIRED) return; LEAD_FIRED = true;
+    if(typeof fbq === 'function') fbq('track','Lead');
+    /* GOOGLE ADS CONVERSION GOES HERE. There is no thank-you page, so this callback is the
+       only conversion anchor on the page. Paste the event snippet below, for example:
+         gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/XXXXXXXXXXXXXXX'});
+       and add the gtag.js loader to <head>. */
+  }
+
+  function wire(host){
+    var sr = host.shadowRoot; if(!sr || sr.__lmsStyled) return false;
+    sr.__lmsStyled = true;
+    var st = document.createElement('style'); st.textContent = CSS; sr.appendChild(st);
+
+    /* Fire Lead only on a genuine confirmation, never on submit or on a validation error.
+       This is the sole conversion anchor, so it NEEDS ONE TEST SUBMISSION to confirm the
+       success markup this form actually produces. If the strings below do not match it,
+       widen the regex rather than firing on submit. */
+    new MutationObserver(function(){
+      var t = (sr.textContent || '').toLowerCase();
+      var gone = !sr.querySelector('input[type=submit],button[type=submit]');
+      var ok = /thank you|thanks|submitted|we have received|received your/.test(t);
+      if(ok && gone) fireLead();
+    }).observe(sr, {childList:true, subtree:true});
+    return true;
+  }
+
+  function scan(){
+    var hosts = document.querySelectorAll('.crm-form-host,[data-crm-form-widget]');
+    var done = false;
+    hosts.forEach(function(h){ if(h.shadowRoot && wire(h)) done = true; });
+    return done;
+  }
+
+  if(!scan()){
+    var obs = new MutationObserver(function(){ scan(); });
+    obs.observe(document.documentElement, {childList:true, subtree:true});
+    var tries = 0, iv = setInterval(function(){
+      if(scan() || ++tries > 40){ clearInterval(iv); }
+    }, 250);
+    setTimeout(function(){ obs.disconnect(); }, 15000);
+  }
+})();
+</script>
+
+</body>
+</html>
