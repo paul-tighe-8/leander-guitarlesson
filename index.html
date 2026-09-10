@@ -333,12 +333,14 @@ fbq('init','277998869200399');fbq('track','PageView');
     </div>
 
     <div class="form-embed">
-      <!-- Leander Music School CRM form widget. Embed code is used exactly as supplied:
-           do not edit src or data. Mobile sizing is handled by the style block injected
-           below, which reaches into the widget's open shadow root. -->
+      <!-- Leander Music School CRM form widget. Never edit src. The data blob is the
+           Vendasta embed with only its style values corrected to brand (primaryColor
+           #610303, white border); formId and baseURL are exactly as supplied. Mobile
+           sizing is handled by the style block injected below, which reaches into the
+           widget's open shadow root. -->
       <script
           async data-crm-form-widget src="https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js"
-          data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjZmZmZmZmIiwiYm9yZGVyUmFkaXVzIjoiNXB4IiwiYm9yZGVyU3R5bGUiOiJzb2xpZCIsImJvcmRlcldpZHRoIjoiMXB4IiwiZm9ybUlkIjoiRm9ybUNvbmZpZ0lELTYzMmQyZmU4LTE0OGEtNDcwZi1iYjAxLTdjOTEzNjc3ZmNjYiIsInBhZGRpbmciOiIyMHB4IiwicHJpbWFyeUNvbG9yIjoiIzYxMDMwMyIsInByaW1hcnlGb250Q29sb3IiOiIjMDAwMDAwIiwid2lkdGgiOiI4MCUifQ=="
+          data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjZmZmZmZmIiwiYm9yZGVyUmFkaXVzIjoiNXB4IiwiYm9yZGVyU3R5bGUiOiJzb2xpZCIsImJvcmRlcldpZHRoIjoiMXB4IiwiZm9ybUlkIjoiRm9ybUNvbmZpZ0lELTc0ZGU3NjU2LThiMTUtNDlhZS1hMmMyLTUxYzEzODAxMzE2NyIsInBhZGRpbmciOiIyMHB4IiwicHJpbWFyeUNvbG9yIjoiIzYxMDMwMyIsInByaW1hcnlGb250Q29sb3IiOiIjMDAwMDAwIiwid2lkdGgiOiIxMDAlIn0="
       ></script>
       <noscript><p class="nojs">This form needs JavaScript. Call or text
         <a href="tel:+15125492454">(512) 549-2454</a> and we will take your details.</p></noscript>
@@ -434,7 +436,7 @@ fbq('init','277998869200399');fbq('track','PageView');
      inputs are under 16px, which makes iOS zoom in on focus. Both are fixed here without
      touching the embed code. */
   var CSS = [
-    '.crm-form,.form-widget,form{width:100%!important;max-width:100%!important;padding:0!important;margin:0!important}',
+    '.crm-form,.form-widget,form{width:100%!important;max-width:100%!important;padding:0!important;margin:0!important;border:0!important}',
     '.form-group{margin:0 0 14px!important;width:100%!important}',
     'label{display:block!important;font-family:Lato,Arial,sans-serif!important;font-weight:900!important;',
       'font-size:13px!important;letter-spacing:.05em!important;text-transform:uppercase!important;',
