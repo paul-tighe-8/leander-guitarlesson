@@ -201,13 +201,6 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','277998869200399');fbq('track','PageView');
 </script>
-<!-- Google tag (gtag.js). Ads conversion "Contact" (AW-976210007), id 5751353, primary for
-     goal on this account. Fired from fireLead() only, never on page view. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-976210007"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','AW-976210007');
-</script>
 </head>
 <body class="lms-lp">
 
@@ -469,38 +462,11 @@ gtag('js',new Date());gtag('config','AW-976210007');
   function fireLead(){
     if(LEAD_FIRED) return; LEAD_FIRED = true;
     if(typeof fbq === 'function') fbq('track','Lead');
-    if(typeof gtag === 'function') gtag('event','conversion',{
-      'send_to':'AW-976210007/QcijCLmE3wIQ15C_0QM', 'value':1.0, 'currency':'USD'});
+    /* GOOGLE ADS CONVERSION GOES HERE. There is no thank-you page, so this callback is the
+       only conversion anchor on the page. Paste the event snippet below, for example:
+         gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/XXXXXXXXXXXXXXX'});
+       and add the gtag.js loader to <head>. */
   }
-
-  /* Confirmation is read from the CRM's OWN response, not from success wording: the widget
-     POSTs CreateFormSubmission and we fire only on a 2xx. This is why the conversion does not
-     break when the form is rebuilt and its success markup changes. The text watcher below is
-     kept only as a fallback if the widget ever changes transport. */
-  var SUBMIT_RE = /FormSubmissionService\/CreateFormSubmission/;
-  (function hookNetwork(){
-    if(window.fetch){
-      var of = window.fetch;
-      window.fetch = function(){
-        var a0 = arguments[0];
-        var url = (a0 && a0.url) ? a0.url : a0;
-        var p = of.apply(this, arguments);
-        if(SUBMIT_RE.test(String(url||''))){
-          p.then(function(r){ if(r && r.ok) fireLead(); }, function(){});
-        }
-        return p;
-      };
-    }
-    var oOpen = XMLHttpRequest.prototype.open, oSend = XMLHttpRequest.prototype.send;
-    XMLHttpRequest.prototype.open = function(m,u){ this.__lmsUrl = String(u||''); return oOpen.apply(this, arguments); };
-    XMLHttpRequest.prototype.send = function(){
-      var x = this;
-      if(SUBMIT_RE.test(x.__lmsUrl||'')){
-        x.addEventListener('load', function(){ if(x.status>=200 && x.status<300) fireLead(); });
-      }
-      return oSend.apply(this, arguments);
-    };
-  })();
 
   function wire(host){
     var sr = host.shadowRoot; if(!sr || sr.__lmsStyled) return false;
