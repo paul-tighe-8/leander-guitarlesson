@@ -27,7 +27,7 @@
 .lms-lp p{margin:0 0 1.05em}
 .lms-lp a{color:var(--maroon)}
 .lms-lp img{max-width:100%; height:auto; display:block}
-.lms-lp .wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+.lms-lp .wrap{max-width:1080px; margin:0 auto; padding:0 clamp(22px,4.2vw,54px)}
 .lms-lp .measure{max-width:68ch}
 
 /* ---------- buttons ---------- */
@@ -51,14 +51,14 @@
 .lms-lp .hero{background:var(--maroon); color:#fff; position:relative; overflow:hidden}
 .lms-lp .hero::after{content:""; position:absolute; inset:auto 0 0 0; height:5px;
   background:var(--gold)}
-.lms-lp .hero-grid{display:grid; grid-template-columns:1.08fr .92fr; gap:44px; align-items:center; padding:52px 0 58px}
+.lms-lp .hero-grid{display:grid; grid-template-columns:1.08fr .92fr; gap:44px; align-items:center; padding-block:52px 58px}
 .lms-lp .hero h1{color:#fff; font-size:clamp(34px,4.6vw,52px)}
 .lms-lp .eyebrow{font-family:Lato,sans-serif; font-weight:900; font-size:12.5px; letter-spacing:.15em;
   text-transform:uppercase; color:var(--gold); margin:0 0 14px}
 .lms-lp .hero-sub{font-size:19px; color:rgba(255,255,255,.9); margin:16px 0 24px; max-width:46ch}
-.lms-lp .offer{display:inline-flex; align-items:center; gap:9px; background:transparent; color:var(--gold);
-  font-weight:900; font-size:13px; letter-spacing:.08em; text-transform:uppercase;
-  border:1px solid rgba(252,204,0,.55); padding:6px 12px; border-radius:3px; margin:0 0 20px}
+.lms-lp .offer{display:inline-flex; align-items:center; gap:10px; background:rgba(252,204,0,.10); color:var(--gold);
+  font-weight:900; font-size:16.5px; letter-spacing:.005em; line-height:1.3;
+  border:1px solid rgba(252,204,0,.55); padding:10px 16px; border-radius:4px; margin:0 0 20px}
 .lms-lp .offer::before{content:""; width:7px; height:7px; background:var(--gold); border-radius:50%; flex:0 0 auto}
 .lms-lp .cta-row{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
 .lms-lp .hero-note{font-size:14.5px; color:rgba(255,255,255,.72); margin:16px 0 0}
@@ -123,7 +123,11 @@
 .lms-lp .form-points li{position:relative; padding-left:26px; margin-bottom:10px; font-size:16.5px}
 .lms-lp .form-points li::before{content:""; position:absolute; left:0; top:.5em; width:12px; height:12px;
   background:var(--gold); border-radius:2px}
-.lms-lp .alt{font-size:15.5px; color:#6E6862; margin:22px 0 0; padding-top:18px; border-top:1px solid var(--rule)}
+.lms-lp .alt{margin:26px 0 0; padding-top:22px; border-top:1px solid var(--rule)}
+.lms-lp .alt-lead{font-family:"Zilla Slab",Georgia,"Times New Roman",serif; font-weight:700; color:var(--ink);
+  font-size:clamp(21px,2.3vw,27px); line-height:1.18; letter-spacing:-.01em; margin:0 0 15px}
+.lms-lp .alt .btn{font-size:18px; padding:15px 26px}
+.lms-lp .alt-call{font-size:17.5px; color:#5F5A55; margin:14px 0 0}
 .lms-lp .form-embed{background:var(--card); border:1px solid var(--rule); border-radius:10px;
   padding:22px 20px; box-shadow:var(--shadow); min-height:120px}
 .lms-lp .form-embed .nojs{margin:0; font-size:16px}
@@ -167,7 +171,7 @@
 .lms-lp .sticky .btn-call{background:#fff; color:var(--maroon); border-color:var(--maroon); box-shadow:none; flex:0 0 44%}
 
 @media (max-width:900px){
-  .lms-lp .hero-grid{grid-template-columns:1fr; gap:28px; padding:38px 0 44px}
+  .lms-lp .hero-grid{grid-template-columns:1fr; gap:28px; padding-block:38px 44px}
   .lms-lp .cards,.lms-lp .reviews,.lms-lp .visit,.lms-lp .skills,.lms-lp .form-grid{grid-template-columns:1fr}
   .lms-lp .form-grid{gap:28px}
   .lms-lp .form-aside{position:static}
@@ -206,7 +210,7 @@ fbq('init','277998869200399');fbq('track','PageView');
       <p class="eyebrow">Leander, Cedar Park and Liberty Hill</p>
       <h1>Guitar and Bass Lessons in Leander, TX</h1>
       <p class="hero-sub">Private one-on-one guitar, bass and ukulele lessons for beginners, kids, teens and adults. Learn the songs you want to play.</p>
-      <p class="offer">$25 off when you tour the studio</p>
+      <p class="offer">Get $25 OFF - submit a form or schedule a tour.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#start">Get Guitar and Bass Lesson Times and Pricing</a>
         <a class="btn btn-ghost" href="tel:+15125492454">Call or text (512) 549-2454</a>
@@ -319,11 +323,13 @@ fbq('init','277998869200399');fbq('track','PageView');
       <ul class="form-points">
         <li>We reply the same day during lobby hours</li>
         <li>We will tell you what to buy, and what not to, before you spend anything</li>
-        <li>Tour the studio and get $25 off</li>
+        <li>GET $25 OFF by submitting the form and/or scheduling a tour</li>
       </ul>
-      <p class="alt">Would rather just book the tour?
-        <a href="https://bookmenow.info/book/lmusicschool/Tour">Pick a time online</a> or call
-        <a href="tel:+15125492454">(512) 549-2454</a>.</p>
+      <div class="alt">
+        <p class="alt-lead">Would rather just book the tour?</p>
+        <a class="btn btn-dark" href="https://bookmenow.info/book/lmusicschool/Tour">Pick a time online</a>
+        <p class="alt-call">or call <a href="tel:+15125492454">(512) 549-2454</a></p>
+      </div>
     </div>
 
     <div class="form-embed">
